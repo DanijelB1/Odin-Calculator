@@ -22,4 +22,18 @@ function operate(operator, a, b) {
     return operators[operator](a, b);
 }
 
-console.log(operate('-', 4, 7));
+//DOM 
+
+const displayInput = document.querySelector('.input-display');
+
+const numbers = document.querySelectorAll('.number');
+
+numbers.forEach((number) => {
+    number.addEventListener('click', () => {
+        displayInput.innerHTML = number.value
+        console.log(number.value)
+    })
+})
+
+
+console.log(operate('-', 15, 7));
