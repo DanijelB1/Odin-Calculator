@@ -1,0 +1,68 @@
+/* * {
+    
+} */
+
+body {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.calculator {
+    width: 250px;
+    height: 400px;
+    border: blue solid 1px;
+    padding: 15px;
+    background-color: lightgray;
+}
+
+.display {
+    border: black solid 2px;
+    height: 80px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.keypad {
+    display: flex;
+    gap: 10px;
+}
+
+.number{
+    height: 40px;
+    aspect-ratio: 1/1;
+}
+
+.operator {
+    height: 40px;
+    width:  75px;
+    background-color: orange;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.display-buttons button {
+    height: 50px;
+    width: 100px;
+}
+
+.keypad-left {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    grid-auto-rows: minmax(10px, auto);
+    margin-right: 10px;
+}
+
+.keypad-right {
+    display: grid;
+    gap: 15px;
+}
+
+.display-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
